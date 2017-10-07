@@ -1,0 +1,1466 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16LF1559 ]
+[d frameptr 6 ]
+"142 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[e E3328 mtouch_sensor_names `uc
+Sensor_AN13 0
+Sensor_AN23 1
+Sensor_AN14 2
+Sensor_AN2 3
+Sensor_AN20 4
+Sensor_AN26 5
+]
+"190
+[e E3335 mtouch_sensor_error `c
+MTOUCH_SENSOR_ERROR_none 0
+MTOUCH_SENSOR_ERROR_invalid_index -1
+MTOUCH_SENSOR_ERROR_interrupt_notEnabled -2
+MTOUCH_SENSOR_ERROR_invalid_calibrate -3
+]
+"71 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[e E3231 mtouch_button_names `uc
+Button0 0
+Button1 1
+Button2 2
+Button3 3
+Button4 4
+]
+[e E3181 mtouch_sensor_names `uc
+Sensor_AN13 0
+Sensor_AN23 1
+Sensor_AN14 2
+Sensor_AN2 3
+Sensor_AN20 4
+Sensor_AN26 5
+]
+[e E3334 mtouch_button_state `uc
+MTOUCH_BUTTON_STATE_initializing 0
+MTOUCH_BUTTON_STATE_notPressed 1
+MTOUCH_BUTTON_STATE_pressed 2
+]
+"69 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[e E3181 mtouch_sensor_names `uc
+Sensor_AN13 0
+Sensor_AN23 1
+Sensor_AN14 2
+Sensor_AN2 3
+Sensor_AN20 4
+Sensor_AN26 5
+]
+[e E3334 mtouch_prox_state `uc
+MTOUCH_PROXIMITY_STATE_initializing 0
+MTOUCH_PROXIMITY_STATE_notActivated 1
+MTOUCH_PROXIMITY_STATE_activated 2
+]
+"72
+[e E3283 mtouch_proximity_names `uc
+Proximity0 0
+]
+"51 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\main.c
+[e E3259 mtouch_button_names `uc
+Button0 0
+Button1 1
+Button2 2
+Button3 3
+Button4 4
+]
+"77
+[e E3311 mtouch_proximity_names `uc
+Proximity0 0
+]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"50 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\main.c
+[v _processButtonTouch processButtonTouch `(v  1 e 1 0 ]
+"63
+[v _processButtonRelease processButtonRelease `(v  1 e 1 0 ]
+"76
+[v _processProximityActivate processProximityActivate `(v  1 e 1 0 ]
+"82
+[v _processProximityNotActivate processProximityNotActivate `(v  1 e 1 0 ]
+"91
+[v _main main `(v  1 e 1 0 ]
+"75 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"112
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"160
+[v _putch putch `(v  1 e 1 0 ]
+"165
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"184
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"51 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"66 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"76
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"82
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"64 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(uc  1 e 1 0 ]
+"80
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+"157 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+"169
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+"187
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+"196
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+"213
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+"231
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+"264
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+"287
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+"295
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+"348
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(uc  1 e 1 0 ]
+"372
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+"421
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+"437
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+"443
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+"467
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(ui  1 s 2 Button_Baseline_Get_helper ]
+"477
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+"478
+[v _MTOUCH_Button_SetPressedCallback MTOUCH_Button_SetPressedCallback `(v  1 e 1 0 ]
+"482
+[v _MTOUCH_Button_SetNotPressedCallback MTOUCH_Button_SetNotPressedCallback `(v  1 e 1 0 ]
+"127 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[v _MTOUCH_Proximity_Initialize MTOUCH_Proximity_Initialize `(v  1 e 1 0 ]
+"147
+[v _MTOUCH_Proximity_InitializeAll MTOUCH_Proximity_InitializeAll `(v  1 e 1 0 ]
+"155
+[v _MTOUCH_Proximity_ServiceAll MTOUCH_Proximity_ServiceAll `(v  1 e 1 0 ]
+"165
+[v _Proximity_Service Proximity_Service `(v  1 s 1 Proximity_Service ]
+"181
+[v _Proximity_State_Initializing Proximity_State_Initializing `(v  1 s 1 Proximity_State_Initializing ]
+"199
+[v _Proximity_State_NotActivated Proximity_State_NotActivated `(v  1 s 1 Proximity_State_NotActivated ]
+"233
+[v _Proximity_State_Activated Proximity_State_Activated `(v  1 s 1 Proximity_State_Activated ]
+"256
+[v _MTOUCH_Proximity_Tick MTOUCH_Proximity_Tick `(v  1 e 1 0 ]
+"260
+[v _Proximity_Tick_helper Proximity_Tick_helper `(v  1 s 1 Proximity_Tick_helper ]
+"311
+[v _Proximity_Deviation_Update Proximity_Deviation_Update `(v  1 s 1 Proximity_Deviation_Update ]
+"355
+[v _MTOUCH_Proximity_Reading_Get MTOUCH_Proximity_Reading_Get `(ul  1 e 4 0 ]
+"363
+[v _Proximity_Reading_Update Proximity_Reading_Update `(v  1 s 1 Proximity_Reading_Update ]
+"379
+[v _Proximity_Baseline_Initialize Proximity_Baseline_Initialize `(v  1 s 1 Proximity_Baseline_Initialize ]
+"385
+[v _Proximity_Baseline_Update Proximity_Baseline_Update `(v  1 s 1 Proximity_Baseline_Update ]
+"401
+[v _MTOUCH_Proximity_Baseline_Get MTOUCH_Proximity_Baseline_Get `(ul  1 e 4 0 ]
+"410
+[v _Proximity_Baseline_Get_helper Proximity_Baseline_Get_helper `(ul  1 s 4 Proximity_Baseline_Get_helper ]
+"420
+[v _Proximity_DefaultCallback Proximity_DefaultCallback `(v  1 s 1 Proximity_DefaultCallback ]
+"421
+[v _MTOUCH_Proximity_SetActivatedCallback MTOUCH_Proximity_SetActivatedCallback `(v  1 e 1 0 ]
+"425
+[v _MTOUCH_Proximity_SetNotActivatedCallback MTOUCH_Proximity_SetNotActivatedCallback `(v  1 e 1 0 ]
+"189 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E3335  1 e 1 0 ]
+"235
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+"251
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+"269
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(uc  1 e 1 0 ]
+"285
+[v _Sensor_Service Sensor_Service `(E3335  1 s 1 Sensor_Service ]
+"324
+[v _Sensor_getScanGroupIndex Sensor_getScanGroupIndex `(uc  1 s 1 Sensor_getScanGroupIndex ]
+"342
+[v _Sensor_Acquisition Sensor_Acquisition `(E3335  1 s 1 Sensor_Acquisition ]
+"379
+[v _Sensor_postAcquisitionProcess Sensor_postAcquisitionProcess `(E3335  1 s 1 Sensor_postAcquisitionProcess ]
+"402
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E3335  1 s 1 Sensor_Acq_ExecutePacket ]
+"597
+[v _Sensor_autoCalibration Sensor_autoCalibration `(E3335  1 s 1 Sensor_autoCalibration ]
+"640
+[v _Sensor_Scanfrequency_Evaluation Sensor_Scanfrequency_Evaluation `(v  1 s 1 Sensor_Scanfrequency_Evaluation ]
+"685
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(ui  1 e 2 0 ]
+"695
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+"716
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+"734
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+"748
+[v _Sensor_isEnabled Sensor_isEnabled `(uc  1 s 1 Sensor_isEnabled ]
+"765
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+"770
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+"775
+[v _Sensor_isActive Sensor_isActive `T(uc  1 s 1 Sensor_isActive ]
+"794
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+"803
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(uc  1 e 1 0 ]
+"811
+[v _Sensor_isCalibrated Sensor_isCalibrated `T(uc  1 s 1 Sensor_isCalibrated ]
+"816
+[v _Sensor_setCalibrated Sensor_setCalibrated `T(v  1 s 1 Sensor_setCalibrated ]
+"822
+[v _Sensor_setCalibratAcqTime Sensor_setCalibratAcqTime `T(v  1 s 1 Sensor_setCalibratAcqTime ]
+"828
+[v _Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(uc  1 s 1 Sensor_isCalibratingAcqTime ]
+"841
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+"850
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(uc  1 e 1 0 ]
+"855
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+"860
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+"52 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"61 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"81
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+"87
+[v _TMR2_StopTimer TMR2_StopTimer `(v  1 e 1 0 ]
+"108
+[v _TMR2_LoadPeriodRegister TMR2_LoadPeriodRegister `(v  1 e 1 0 ]
+[s S305 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"372 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic16lf1559.h
+[s S314 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S319 . 1 `S305 1 . 1 0 `S314 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES319  1 e 1 @11 ]
+[s S47 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"599
+[s S56 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 AD1IF 1 0 :1:6 
+]
+[u S59 . 1 `S47 1 . 1 0 `S56 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES59  1 e 1 @17 ]
+[s S832 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 AD2IF 1 0 :1:6 
+]
+"657
+[u S837 . 1 `S832 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES837  1 e 1 @18 ]
+"883
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"903
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"923
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S79 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"944
+[s S83 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S91 . 1 `S79 1 . 1 0 `S83 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES91  1 e 1 @28 ]
+"994
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S559 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1009
+[u S566 . 1 `S559 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES566  1 e 1 @140 ]
+"1044
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S616 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1058
+[u S622 . 1 `S616 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES622  1 e 1 @141 ]
+"1083
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S494 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1100
+[u S503 . 1 `S494 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES503  1 e 1 @142 ]
+[s S129 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1166
+[s S138 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 AD1IE 1 0 :1:6 
+]
+[u S141 . 1 `S129 1 . 1 0 `S138 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES141  1 e 1 @145 ]
+[s S264 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1262
+[s S271 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S278 . 1 `S264 1 . 1 0 `S271 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES278  1 e 1 @149 ]
+"1379
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1438
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1783
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1828
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"1867
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2033
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+[s S794 . 1 `uc 1 GRDASEL 1 0 :1:0 
+`uc 1 GRDBSEL 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 SDSEL 1 0 :1:4 
+`uc 1 SSSEL 1 0 :1:5 
+]
+"2047
+[u S800 . 1 `S794 1 . 1 0 ]
+[v _APFCONbits APFCONbits `VES800  1 e 1 @285 ]
+"2072
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+[s S537 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"2090
+[s S544 . 1 `uc 1 ANSELA 1 0 :6:0 
+]
+[u S546 . 1 `S537 1 . 1 0 `S544 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES546  1 e 1 @396 ]
+"2125
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+[s S596 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ANSB4 1 0 :1:4 
+`uc 1 ANSB5 1 0 :1:5 
+`uc 1 ANSB6 1 0 :1:6 
+`uc 1 ANSB7 1 0 :1:7 
+]
+"2142
+[s S602 . 1 `uc 1 ANSELB 1 0 :8:0 
+]
+[u S604 . 1 `S596 1 . 1 0 `S602 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES604  1 e 1 @397 ]
+"2172
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+[s S468 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+`uc 1 ANSC6 1 0 :1:6 
+`uc 1 ANSC7 1 0 :1:7 
+]
+"2192
+[s S477 . 1 `uc 1 ANSELC 1 0 :8:0 
+]
+[u S479 . 1 `S468 1 . 1 0 `S477 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES479  1 e 1 @398 ]
+"2412
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2432
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"2459
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"2479
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"2499
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S163 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"2516
+[u S172 . 1 `S163 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES172  1 e 1 @413 ]
+"2561
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"2623
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"2675
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+[s S515 . 1 `uc 1 WPUA0 1 0 :1:0 
+`uc 1 WPUA1 1 0 :1:1 
+`uc 1 WPUA2 1 0 :1:2 
+`uc 1 WPUA3 1 0 :1:3 
+`uc 1 WPUA4 1 0 :1:4 
+`uc 1 WPUA5 1 0 :1:5 
+]
+"2693
+[s S522 . 1 `uc 1 WPUA 1 0 :6:0 
+]
+[u S524 . 1 `S515 1 . 1 0 `S522 1 . 1 0 ]
+[v _WPUAbits WPUAbits `VES524  1 e 1 @524 ]
+"2733
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+[s S576 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 WPUB4 1 0 :1:4 
+`uc 1 WPUB5 1 0 :1:5 
+`uc 1 WPUB6 1 0 :1:6 
+`uc 1 WPUB7 1 0 :1:7 
+]
+"2750
+[s S582 . 1 `uc 1 WPUB 1 0 :8:0 
+]
+[u S584 . 1 `S576 1 . 1 0 `S582 1 . 1 0 ]
+[v _WPUBbits WPUBbits `VES584  1 e 1 @525 ]
+"4143
+[v _AD1CON0 AD1CON0 `VEuc  1 e 1 @1809 ]
+[s S857 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"4177
+[s S861 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S869 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_nDONE1 1 0 :1:1 
+]
+[u S872 . 1 `S857 1 . 1 0 `S861 1 . 1 0 `S869 1 . 1 0 ]
+[v _AD1CON0bits AD1CON0bits `VES872  1 e 1 @1809 ]
+"4377
+[v _ADCOMCON ADCOMCON `VEuc  1 e 1 @1810 ]
+"4531
+[v _AD1CON2 AD1CON2 `VEuc  1 e 1 @1811 ]
+[s S748 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRIGSEL 1 0 :3:4 
+]
+"4557
+[s S751 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRIGSEL0 1 0 :1:4 
+`uc 1 TRIGSEL1 1 0 :1:5 
+`uc 1 TRIGSEL2 1 0 :1:6 
+]
+[u S756 . 1 `S748 1 . 1 0 `S751 1 . 1 0 ]
+[v _AD1CON2bits AD1CON2bits `VES756  1 e 1 @1811 ]
+"4651
+[v _AD1CON3 AD1CON3 `VEuc  1 e 1 @1812 ]
+"4660
+[v _AAD1CON3 AAD1CON3 `VEuc  1 e 1 @1812 ]
+"5001
+[v _AD1PRECON AD1PRECON `VEuc  1 e 1 @1814 ]
+"5247
+[v _AD1ACQCON AD1ACQCON `VEuc  1 e 1 @1815 ]
+"5502
+[v _AAD1GRD AAD1GRD `VEuc  1 e 1 @1816 ]
+"5658
+[v _AAD1CAP AAD1CAP `VEuc  1 e 1 @1817 ]
+"5887
+[v _AAD1RES0 AAD1RES0 `VEus  1 e 2 @1818 ]
+"6181
+[v _AD2CON0 AD2CON0 `VEuc  1 e 1 @1937 ]
+"6211
+[s S904 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_nDONE2 1 0 :1:1 
+]
+[u S907 . 1 `S857 1 . 1 0 `S861 1 . 1 0 `S904 1 . 1 0 ]
+[v _AD2CON0bits AD2CON0bits `VES907  1 e 1 @1937 ]
+"6339
+[v _AD2CON2 AD2CON2 `VEuc  1 e 1 @1939 ]
+"6361
+[v _AD2CON2bits AD2CON2bits `VES756  1 e 1 @1939 ]
+"6421
+[v _AD2CON3 AD2CON3 `VEuc  1 e 1 @1940 ]
+"6426
+[v _AAD2CON3 AAD2CON3 `VEuc  1 e 1 @1940 ]
+"6551
+[v _AD2PRECON AD2PRECON `VEuc  1 e 1 @1942 ]
+"6737
+[v _AD2ACQCON AD2ACQCON `VEuc  1 e 1 @1943 ]
+"6928
+[v _AAD2GRD AAD2GRD `VEuc  1 e 1 @1944 ]
+"7034
+[v _AAD2CAP AAD2CAP `VEuc  1 e 1 @1945 ]
+"7209
+[v _AAD2RES0 AAD2RES0 `VEus  1 e 2 @1946 ]
+"61 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"62
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxBuffer eusartTxBuffer `VE[16]uc  1 e 16 0 ]
+"64
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"66
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxBuffer eusartRxBuffer `VE[16]uc  1 e 16 0 ]
+"69
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"71 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button_init mtouch_button_init `DC[5]S1386  1 e 80 0 ]
+"110
+[v _mtouch_button mtouch_button `[5]S1386  1 s 80 mtouch_button ]
+"135
+[v _callback_pressed callback_pressed `*.37(v  1 s 2 callback_pressed ]
+"136
+[v _callback_notPressed callback_notPressed `*.37(v  1 s 2 callback_notPressed ]
+"144
+[v _Button_StateMachine Button_StateMachine `[3]*.37(v  1 e 6 0 ]
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+"69 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[v _mtouch_proximity_init mtouch_proximity_init `DC[1]S1712  1 e 18 0 ]
+"80
+[v _mtouch_proximity mtouch_proximity `[1]S1712  1 s 18 mtouch_proximity ]
+"104
+[v _callback_activated callback_activated `*.37(v  1 s 2 callback_activated ]
+"105
+[v _callback_notActivated callback_notActivated `*.37(v  1 s 2 callback_notActivated ]
+"114
+[v _Proximity_StateMachine Proximity_StateMachine `[3]*.37(v  1 e 6 0 ]
+"142 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _callback_sampled callback_sampled `*.37(v  1 s 2 callback_sampled ]
+"149
+[v _packet_sample packet_sample `[2]ui  1 s 4 packet_sample ]
+"150
+[v _packet_noise packet_noise `ui  1 s 2 packet_noise ]
+"157
+[v _sample_period sample_period `uc  1 s 1 sample_period ]
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"164
+[v _mtouch_sensor mtouch_sensor `[6]S447  1 s 54 mtouch_sensor ]
+"178
+[s S460 . 2 `*.5S447 1 sensor_adc1 1 0 `*.5S447 1 sensor_adc2 1 1 ]
+[v _sensor_scan_group sensor_scan_group `DC[3]S460  1 s 6 sensor_scan_group ]
+"91 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"122
+} 0
+"66 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
+"82
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"61 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"79
+} 0
+"52 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"76 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"75 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"64 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(uc  1 e 1 0 ]
+{
+"73
+} 0
+"80
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+{
+"84
+} 0
+"256 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[v _MTOUCH_Proximity_Tick MTOUCH_Proximity_Tick `(v  1 e 1 0 ]
+{
+"259
+} 0
+"260
+[v _Proximity_Tick_helper Proximity_Tick_helper `(v  1 s 1 Proximity_Tick_helper ]
+{
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Tick_helper@prox prox `*.4S1712  1 a 1 wreg ]
+[v Proximity_Tick_helper@prox prox `*.4S1712  1 a 1 wreg ]
+"263
+"260
+[v Proximity_Tick_helper@prox prox `*.4S1712  1 a 1 4 ]
+"271
+} 0
+"287 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+{
+"289
+[v MTOUCH_Button_Tick@i i `uc  1 a 1 6 ]
+"294
+} 0
+"295
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Tick_helper@button button `*.5S1386  1 a 1 wreg ]
+[v Button_Tick_helper@button button `*.5S1386  1 a 1 wreg ]
+"298
+"295
+[v Button_Tick_helper@button button `*.5S1386  1 a 1 4 ]
+"306
+} 0
+"841 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"843
+[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.5S447  1 a 1 4 ]
+"848
+} 0
+"855
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_Sampled_Reset@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_Sampled_Reset@sensor sensor `*.5S447  1 a 1 wreg ]
+"857
+"855
+[v Sensor_Sampled_Reset@sensor sensor `*.5S447  1 a 1 2 ]
+"858
+} 0
+"269
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(uc  1 e 1 0 ]
+{
+"271
+[v MTOUCH_Sensor_SampleAll@group group `uc  1 a 1 0 ]
+"278
+} 0
+"285
+[v _Sensor_Service Sensor_Service `(E3335  1 s 1 Sensor_Service ]
+{
+[v Sensor_Service@scanGroup scanGroup `uc  1 a 1 wreg ]
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"288
+[v Sensor_Service@sensor_adc2 sensor_adc2 `*.5S447  1 a 1 45 ]
+"287
+[v Sensor_Service@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 44 ]
+"293
+[v Sensor_Service@error error `E3335  1 a 1 43 ]
+"285
+[v Sensor_Service@scanGroup scanGroup `uc  1 a 1 wreg ]
+"290
+[v Sensor_Service@scanGroup scanGroup `uc  1 a 1 42 ]
+"322
+} 0
+"860
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setSampled@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_setSampled@sensor sensor `*.5S447  1 a 1 wreg ]
+"862
+"860
+[v Sensor_setSampled@sensor sensor `*.5S447  1 a 1 2 ]
+"863
+} 0
+"695
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_RawSample_Update@sensor sensor `*.5S447  1 a 1 wreg ]
+"697
+[v Sensor_RawSample_Update@adcIndex adcIndex `uc  1 a 1 0 ]
+"695
+[v Sensor_RawSample_Update@sensor sensor `*.5S447  1 a 1 wreg ]
+"697
+"695
+[v Sensor_RawSample_Update@sensor sensor `*.5S447  1 a 1 1 ]
+"709
+} 0
+"716
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+{
+[v Sensor_DefaultCallback@sensor sensor `E3328  1 p 1 2 ]
+} 0
+"342
+[v _Sensor_Acquisition Sensor_Acquisition `(E3335  1 s 1 Sensor_Acquisition ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 wreg ]
+"344
+[v Sensor_Acquisition@error error `E3335  1 a 1 35 ]
+"342
+[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 wreg ]
+[v Sensor_Acquisition@sensor_adc2 sensor_adc2 `*.5S447  1 p 1 32 ]
+"344
+"342
+[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 36 ]
+"377
+} 0
+"379
+[v _Sensor_postAcquisitionProcess Sensor_postAcquisitionProcess `(E3335  1 s 1 Sensor_postAcquisitionProcess ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_postAcquisitionProcess@sensor sensor `*.5S447  1 a 1 wreg ]
+"381
+[v Sensor_postAcquisitionProcess@deviation deviation `ui  1 a 2 1 ]
+"382
+[v Sensor_postAcquisitionProcess@adcIndex adcIndex `uc  1 a 1 0 ]
+"379
+[v Sensor_postAcquisitionProcess@sensor sensor `*.5S447  1 a 1 wreg ]
+"382
+"379
+[v Sensor_postAcquisitionProcess@sensor sensor `*.5S447  1 a 1 3 ]
+"395
+} 0
+"770
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setInactive@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_setInactive@sensor sensor `*.5S447  1 a 1 wreg ]
+"772
+"770
+[v Sensor_setInactive@sensor sensor `*.5S447  1 a 1 2 ]
+"773
+} 0
+"765
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setActive@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_setActive@sensor sensor `*.5S447  1 a 1 wreg ]
+"767
+"765
+[v Sensor_setActive@sensor sensor `*.5S447  1 a 1 2 ]
+"768
+} 0
+"640
+[v _Sensor_Scanfrequency_Evaluation Sensor_Scanfrequency_Evaluation `(v  1 s 1 Sensor_Scanfrequency_Evaluation ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 wreg ]
+"646
+[v Sensor_Scanfrequency_Evaluation@best_packet_sample best_packet_sample `[2]ui  1 a 4 27 ]
+"644
+[v Sensor_Scanfrequency_Evaluation@packet_noise_Max packet_noise_Max `ui  1 a 2 24 ]
+"642
+[v Sensor_Scanfrequency_Evaluation@i i `uc  1 a 1 31 ]
+"645
+[v Sensor_Scanfrequency_Evaluation@best_sample_period best_sample_period `uc  1 a 1 26 ]
+"640
+[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 wreg ]
+[v Sensor_Scanfrequency_Evaluation@sensor_adc2 sensor_adc2 `*.5S447  1 p 1 20 ]
+"643
+[v Sensor_Scanfrequency_Evaluation@frequency_hop frequency_hop `DC[5]uc  1 s 5 frequency_hop ]
+"648
+"640
+[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 23 ]
+"678
+} 0
+"402
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E3335  1 s 1 Sensor_Acq_ExecutePacket ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 wreg ]
+"411
+[v Sensor_Acq_ExecutePacket@last_b last_b `ui  1 a 2 15 ]
+"410
+[v Sensor_Acq_ExecutePacket@last_a last_a `ui  1 a 2 13 ]
+[s S741 . 1 `uc 1 done 1 0 :1:0 
+`uc 1 check 1 0 :1:1 
+`uc 1 error 1 0 :1:2 
+]
+"407
+[v Sensor_Acq_ExecutePacket@sensor_globalFlags sensor_globalFlags `S741  1 a 1 18 ]
+"408
+[v Sensor_Acq_ExecutePacket@packet_counter packet_counter `uc  1 a 1 17 ]
+"412
+[v Sensor_Acq_ExecutePacket@activeSensor activeSensor `uc  1 a 1 12 ]
+"404
+[v Sensor_Acq_ExecutePacket@error error `E3335  1 a 1 11 ]
+"406
+[v Sensor_Acq_ExecutePacket@ADxIF_flag ADxIF_flag `uc  1 a 1 10 ]
+"415
+[v Sensor_Acq_ExecutePacket@AD2CON2_temp AD2CON2_temp `uc  1 a 1 9 ]
+[v Sensor_Acq_ExecutePacket@AD1CON2_temp AD1CON2_temp `uc  1 a 1 8 ]
+"405
+[v Sensor_Acq_ExecutePacket@ADCOMCON_temp ADCOMCON_temp `uc  1 a 1 7 ]
+"402
+[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 wreg ]
+[v Sensor_Acq_ExecutePacket@sensor_adc2 sensor_adc2 `*.5S447  1 p 1 4 ]
+"404
+"402
+[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.5S447  1 a 1 19 ]
+"587
+} 0
+"87 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/tmr2.c
+[v _TMR2_StopTimer TMR2_StopTimer `(v  1 e 1 0 ]
+{
+"91
+} 0
+"81
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+{
+"85
+} 0
+"108
+[v _TMR2_LoadPeriodRegister TMR2_LoadPeriodRegister `(v  1 e 1 0 ]
+{
+[v TMR2_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 wreg ]
+[v TMR2_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 wreg ]
+"110
+[v TMR2_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 2 ]
+"111
+} 0
+"748 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_isEnabled Sensor_isEnabled `(uc  1 s 1 Sensor_isEnabled ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isEnabled@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_isEnabled@sensor sensor `*.5S447  1 a 1 wreg ]
+"750
+"748
+[v Sensor_isEnabled@sensor sensor `*.5S447  1 a 1 3 ]
+"754
+} 0
+"811
+[v _Sensor_isCalibrated Sensor_isCalibrated `T(uc  1 s 1 Sensor_isCalibrated ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isCalibrated@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_isCalibrated@sensor sensor `*.5S447  1 a 1 wreg ]
+"813
+"811
+[v Sensor_isCalibrated@sensor sensor `*.5S447  1 a 1 2 ]
+"814
+} 0
+"775
+[v _Sensor_isActive Sensor_isActive `T(uc  1 s 1 Sensor_isActive ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isActive@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_isActive@sensor sensor `*.5S447  1 a 1 wreg ]
+"777
+"775
+[v Sensor_isActive@sensor sensor `*.5S447  1 a 1 2 ]
+"778
+} 0
+"597
+[v _Sensor_autoCalibration Sensor_autoCalibration `(E3335  1 s 1 Sensor_autoCalibration ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_autoCalibration@sensor sensor `*.5S447  1 a 1 wreg ]
+"599
+[v Sensor_autoCalibration@adcIndex adcIndex `uc  1 a 1 8 ]
+"597
+[v Sensor_autoCalibration@sensor sensor `*.5S447  1 a 1 wreg ]
+"599
+"597
+[v Sensor_autoCalibration@sensor sensor `*.5S447  1 a 1 9 ]
+"631
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 2 ]
+"9
+} 0
+"816 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_setCalibrated Sensor_setCalibrated `T(v  1 s 1 Sensor_setCalibrated ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setCalibrated@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_setCalibrated@sensor sensor `*.5S447  1 a 1 wreg ]
+"818
+"816
+[v Sensor_setCalibrated@sensor sensor `*.5S447  1 a 1 2 ]
+"820
+} 0
+"822
+[v _Sensor_setCalibratAcqTime Sensor_setCalibratAcqTime `T(v  1 s 1 Sensor_setCalibratAcqTime ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.5S447  1 a 1 wreg ]
+"824
+"822
+[v Sensor_setCalibratAcqTime@sensor sensor `*.5S447  1 a 1 2 ]
+"826
+} 0
+"828
+[v _Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(uc  1 s 1 Sensor_isCalibratingAcqTime ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.5S447  1 a 1 wreg ]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.5S447  1 a 1 wreg ]
+"830
+"828
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.5S447  1 a 1 2 ]
+"832
+} 0
+"324
+[v _Sensor_getScanGroupIndex Sensor_getScanGroupIndex `(uc  1 s 1 Sensor_getScanGroupIndex ]
+{
+[s S447 . 9 `DCE3328 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `ui 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+`uc 1 active 1 8 :1:1 
+`uc 1 calibrated 1 8 :1:2 
+`uc 1 enabled 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_getScanGroupIndex@sensor sensor `*.5S447  1 a 1 wreg ]
+"326
+[v Sensor_getScanGroupIndex@sensorGroup sensorGroup `uc  1 a 1 7 ]
+"324
+[v Sensor_getScanGroupIndex@sensor sensor `*.5S447  1 a 1 wreg ]
+"327
+"324
+[v Sensor_getScanGroupIndex@sensor sensor `*.5S447  1 a 1 6 ]
+"335
+} 0
+"251
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+{
+"260
+} 0
+"155 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[v _MTOUCH_Proximity_ServiceAll MTOUCH_Proximity_ServiceAll `(v  1 e 1 0 ]
+{
+"158
+} 0
+"165
+[v _Proximity_Service Proximity_Service `(v  1 s 1 Proximity_Service ]
+{
+[v Proximity_Service@name name `E3283  1 a 1 wreg ]
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+"167
+[v Proximity_Service@prox prox `*.4S1712  1 a 1 23 ]
+"165
+[v Proximity_Service@name name `E3283  1 a 1 wreg ]
+"167
+[v Proximity_Service@name name `E3283  1 a 1 22 ]
+"180
+} 0
+"233
+[v _Proximity_State_Activated Proximity_State_Activated `(v  1 s 1 Proximity_State_Activated ]
+{
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_State_Activated@prox prox `*.4S1712  1 p 1 7 ]
+"249
+} 0
+"181
+[v _Proximity_State_Initializing Proximity_State_Initializing `(v  1 s 1 Proximity_State_Initializing ]
+{
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_State_Initializing@prox prox `*.4S1712  1 p 1 7 ]
+"198
+} 0
+"199
+[v _Proximity_State_NotActivated Proximity_State_NotActivated `(v  1 s 1 Proximity_State_NotActivated ]
+{
+"202
+[v Proximity_State_NotActivated@deviation deviation `l  1 a 4 12 ]
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+"199
+[v Proximity_State_NotActivated@prox prox `*.4S1712  1 p 1 7 ]
+"232
+} 0
+"82 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\main.c
+[v _processProximityNotActivate processProximityNotActivate `(v  1 e 1 0 ]
+{
+[v processProximityNotActivate@prox prox `E3311  1 p 1 2 ]
+"86
+} 0
+"420 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[v _Proximity_DefaultCallback Proximity_DefaultCallback `(v  1 s 1 Proximity_DefaultCallback ]
+{
+} 0
+"76 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\main.c
+[v _processProximityActivate processProximityActivate `(v  1 e 1 0 ]
+{
+[v processProximityActivate@prox prox `E3311  1 p 1 2 ]
+"80
+} 0
+"385 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[v _Proximity_Baseline_Update Proximity_Baseline_Update `(v  1 s 1 Proximity_Baseline_Update ]
+{
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Baseline_Update@prox prox `*.4S1712  1 a 1 wreg ]
+[v Proximity_Baseline_Update@prox prox `*.4S1712  1 a 1 wreg ]
+"387
+"385
+[v Proximity_Baseline_Update@prox prox `*.4S1712  1 a 1 6 ]
+"399
+} 0
+"379
+[v _Proximity_Baseline_Initialize Proximity_Baseline_Initialize `(v  1 s 1 Proximity_Baseline_Initialize ]
+{
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Baseline_Initialize@prox prox `*.4S1712  1 a 1 wreg ]
+[v Proximity_Baseline_Initialize@prox prox `*.4S1712  1 a 1 wreg ]
+"381
+"379
+[v Proximity_Baseline_Initialize@prox prox `*.4S1712  1 a 1 4 ]
+"383
+} 0
+"127
+[v _MTOUCH_Proximity_Initialize MTOUCH_Proximity_Initialize `(v  1 e 1 0 ]
+{
+[v MTOUCH_Proximity_Initialize@name name `E3283  1 a 1 wreg ]
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+"129
+[v MTOUCH_Proximity_Initialize@prox prox `*.4S1712  1 a 1 4 ]
+"127
+[v MTOUCH_Proximity_Initialize@name name `E3283  1 a 1 wreg ]
+"129
+[v MTOUCH_Proximity_Initialize@name name `E3283  1 a 1 3 ]
+"136
+} 0
+"363
+[v _Proximity_Reading_Update Proximity_Reading_Update `(v  1 s 1 Proximity_Reading_Update ]
+{
+[s S1712 . 18 `DCuc 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `ui 1 counter 2 12 `ui 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Reading_Update@prox prox `*.4S1712  1 a 1 wreg ]
+[v Proximity_Reading_Update@prox prox `*.4S1712  1 a 1 wreg ]
+"365
+"363
+[v Proximity_Reading_Update@prox prox `*.4S1712  1 a 1 4 ]
+"377
+} 0
+"311
+[v _Proximity_Deviation_Update Proximity_Deviation_Update `(v  1 s 1 Proximity_Deviation_Update ]
+{
+[v Proximity_Deviation_Update@name name `E3283  1 a 1 wreg ]
+"313
+[v Proximity_Deviation_Update@deviation deviation `l  1 a 4 16 ]
+"311
+[v Proximity_Deviation_Update@name name `E3283  1 a 1 wreg ]
+"315
+[v Proximity_Deviation_Update@name name `E3283  1 a 1 20 ]
+"348
+} 0
+"355
+[v _MTOUCH_Proximity_Reading_Get MTOUCH_Proximity_Reading_Get `(ul  1 e 4 0 ]
+{
+[v MTOUCH_Proximity_Reading_Get@name name `E3283  1 a 1 wreg ]
+[v MTOUCH_Proximity_Reading_Get@name name `E3283  1 a 1 wreg ]
+"357
+[v MTOUCH_Proximity_Reading_Get@name name `E3283  1 a 1 7 ]
+"361
+} 0
+"401
+[v _MTOUCH_Proximity_Baseline_Get MTOUCH_Proximity_Baseline_Get `(ul  1 e 4 0 ]
+{
+[v MTOUCH_Proximity_Baseline_Get@name name `E3283  1 a 1 wreg ]
+[v MTOUCH_Proximity_Baseline_Get@name name `E3283  1 a 1 wreg ]
+"403
+[v MTOUCH_Proximity_Baseline_Get@name name `E3283  1 a 1 6 ]
+"408
+} 0
+"410
+[v _Proximity_Baseline_Get_helper Proximity_Baseline_Get_helper `(ul  1 s 4 Proximity_Baseline_Get_helper ]
+{
+[v Proximity_Baseline_Get_helper@name name `E3283  1 a 1 wreg ]
+[v Proximity_Baseline_Get_helper@name name `E3283  1 a 1 wreg ]
+"412
+[v Proximity_Baseline_Get_helper@name name `E3283  1 a 1 0 ]
+"413
+} 0
+"187 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+{
+"189
+[v MTOUCH_Button_ServiceAll@button button `E3231  1 a 1 15 ]
+"194
+} 0
+"196
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+{
+[v Button_Service@name name `E3231  1 a 1 wreg ]
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"198
+[v Button_Service@button button `*.5S1386  1 a 1 13 ]
+"196
+[v Button_Service@name name `E3231  1 a 1 wreg ]
+"198
+[v Button_Service@name name `E3231  1 a 1 12 ]
+"211
+} 0
+"850 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E3328  1 a 1 wreg ]
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E3328  1 a 1 wreg ]
+"852
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E3328  1 a 1 7 ]
+"853
+} 0
+"803
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E3328  1 a 1 wreg ]
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E3328  1 a 1 wreg ]
+"805
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E3328  1 a 1 7 ]
+"809
+} 0
+"231 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_NotPressed@button button `*.5S1386  1 p 1 7 ]
+"263
+} 0
+"213
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Initializing@button button `*.5S1386  1 p 1 7 ]
+"230
+} 0
+"264
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Pressed@button button `*.5S1386  1 p 1 7 ]
+"280
+} 0
+"50 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\main.c
+[v _processButtonTouch processButtonTouch `(v  1 e 1 0 ]
+{
+[v processButtonTouch@button button `E3259  1 p 1 2 ]
+"61
+} 0
+"477 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+{
+} 0
+"63 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\main.c
+[v _processButtonRelease processButtonRelease `(v  1 e 1 0 ]
+{
+[v processButtonRelease@button button `E3259  1 p 1 2 ]
+"74
+} 0
+"157 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_Initialize@name name `E3231  1 a 1 wreg ]
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"159
+[v MTOUCH_Button_Initialize@button button `*.5S1386  1 a 1 1 ]
+"157
+[v MTOUCH_Button_Initialize@name name `E3231  1 a 1 wreg ]
+"159
+[v MTOUCH_Button_Initialize@name name `E3231  1 a 1 0 ]
+"167
+} 0
+"794 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E3328  1 a 1 wreg ]
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E3328  1 a 1 wreg ]
+"796
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E3328  1 a 1 7 ]
+"801
+} 0
+"443 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Update@button button `*.5S1386  1 a 1 wreg ]
+[v Button_Baseline_Update@button button `*.5S1386  1 a 1 wreg ]
+"445
+"443
+[v Button_Baseline_Update@button button `*.5S1386  1 a 1 6 ]
+"457
+} 0
+"437
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Initialize@button button `*.5S1386  1 a 1 wreg ]
+[v Button_Baseline_Initialize@button button `*.5S1386  1 a 1 wreg ]
+"439
+"437
+[v Button_Baseline_Initialize@button button `*.5S1386  1 a 1 4 ]
+"441
+} 0
+"421
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update@button button `*.5S1386  1 a 1 wreg ]
+[v Button_Reading_Update@button button `*.5S1386  1 a 1 wreg ]
+"423
+"421
+[v Button_Reading_Update@button button `*.5S1386  1 a 1 2 ]
+"435
+} 0
+"685 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(ui  1 e 2 0 ]
+{
+[v MTOUCH_Sensor_RawSample_Get@name name `E3328  1 a 1 wreg ]
+[v MTOUCH_Sensor_RawSample_Get@name name `E3328  1 a 1 wreg ]
+"687
+[v MTOUCH_Sensor_RawSample_Get@name name `E3328  1 a 1 9 ]
+"693
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 4 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 2 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 5 ]
+"51
+} 0
+"372 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+{
+[s S1386 . 16 `DCE3231 1 name 1 0 `DCE3181 1 sensor 1 1 `E3334 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Deviation_Update@button button `*.5S1386  1 a 1 wreg ]
+"374
+[v Button_Deviation_Update@deviation deviation `l  1 a 4 3 ]
+"372
+[v Button_Deviation_Update@button button `*.5S1386  1 a 1 wreg ]
+"376
+"372
+[v Button_Deviation_Update@button button `*.5S1386  1 a 1 2 ]
+"392
+} 0
+"425 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_proximity.c
+[v _MTOUCH_Proximity_SetNotActivatedCallback MTOUCH_Proximity_SetNotActivatedCallback `(v  1 e 1 0 ]
+{
+[v MTOUCH_Proximity_SetNotActivatedCallback@callback callback `*.37(v  1 p 2 2 ]
+"428
+} 0
+"421
+[v _MTOUCH_Proximity_SetActivatedCallback MTOUCH_Proximity_SetActivatedCallback `(v  1 e 1 0 ]
+{
+[v MTOUCH_Proximity_SetActivatedCallback@callback callback `*.37(v  1 p 2 2 ]
+"424
+} 0
+"478 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_SetPressedCallback MTOUCH_Button_SetPressedCallback `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_SetPressedCallback@callback callback `*.37(v  1 p 2 2 ]
+"481
+} 0
+"482
+[v _MTOUCH_Button_SetNotPressedCallback MTOUCH_Button_SetNotPressedCallback `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_SetNotPressedCallback@callback callback `*.37(v  1 p 2 2 ]
+"485
+} 0
+"51 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"66
+} 0
+"165 E:\Demo\mTouch_Demo\SDK\1559_mTouch_demo.X\mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"182
+} 0
+"184
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"202
+} 0
